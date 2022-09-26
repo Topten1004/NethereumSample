@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "NethereumSample/1.0.0": {
         "dependencies": {
+          "Nethereum.HdWallet": "4.8.0",
+          "Nethereum.Metamask": "4.8.0",
           "Nethereum.Web3": "4.8.0"
         },
         "runtime": {
@@ -22,6 +24,14 @@
           "lib/netstandard1.0/Common.Logging.Core.dll": {
             "assemblyVersion": "3.4.1.0",
             "fileVersion": "3.4.0.0"
+          }
+        }
+      },
+      "FluentValidation/9.3.0": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
           }
         }
       },
@@ -45,8 +55,39 @@
           "System.Threading": "4.0.11"
         }
       },
-      "Microsoft.NETCore.Platforms/1.0.1": {},
+      "Microsoft.Extensions.Logging.Abstractions/1.0.0": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.20622"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
+      "NBitcoin/7.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/NBitcoin.dll": {
+            "assemblyVersion": "7.0.6.0",
+            "fileVersion": "7.0.6.0"
+          }
+        }
+      },
       "NBitcoin.Secp256k1/1.0.3": {
         "runtime": {
           "lib/netcoreapp2.1/NBitcoin.Secp256k1.dll": {
@@ -114,6 +155,20 @@
           }
         }
       },
+      "Nethereum.HdWallet/4.8.0": {
+        "dependencies": {
+          "NBitcoin": "7.0.6",
+          "NETStandard.Library": "2.0.3",
+          "Nethereum.Web3": "4.8.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nethereum.HdWallet.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
       "Nethereum.Hex/4.8.0": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -157,6 +212,19 @@
         },
         "runtime": {
           "lib/net5.0/Nethereum.KeyStore.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
+      "Nethereum.Metamask/4.8.0": {
+        "dependencies": {
+          "Nethereum.UI": "4.8.0",
+          "Nethereum.Web3": "4.8.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Nethereum.Metamask.dll": {
             "assemblyVersion": "4.8.0.0",
             "fileVersion": "4.8.0.0"
           }
@@ -234,6 +302,47 @@
           }
         }
       },
+      "Nethereum.Siwe/4.8.0": {
+        "dependencies": {
+          "Nethereum.Signer": "4.8.0",
+          "Nethereum.Siwe.Core": "4.8.0",
+          "Nethereum.Util": "4.8.0",
+          "Nethereum.Web3": "4.8.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/Nethereum.Siwe.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
+      "Nethereum.Siwe.Core/4.8.0": {
+        "dependencies": {
+          "Nethereum.Util": "4.8.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/Nethereum.Siwe.Core.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
+      "Nethereum.UI/4.8.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0",
+          "Nethereum.Siwe": "4.8.0",
+          "Nethereum.Siwe.Core": "4.8.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Nethereum.UI.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
       "Nethereum.Util/4.8.0": {
         "dependencies": {
           "Nethereum.Hex": "4.8.0",
@@ -268,6 +377,11 @@
           }
         }
       },
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -286,14 +400,35 @@
       },
       "System.Collections/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
+      "System.Collections.Concurrent/4.0.12": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Globalization": "4.0.11",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        }
+      },
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        }
+      },
+      "System.Diagnostics.Tracing/4.1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -319,14 +454,14 @@
       },
       "System.Globalization/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.IO/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
@@ -374,7 +509,7 @@
       },
       "System.Reflection/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.IO": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -407,7 +542,7 @@
       },
       "System.Reflection.Extensions/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
@@ -415,7 +550,7 @@
       },
       "System.Reflection.Primitives/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -428,7 +563,7 @@
       },
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Globalization": "4.0.11",
           "System.Reflection": "4.1.0",
@@ -437,27 +572,27 @@
       },
       "System.Runtime/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
       "System.Runtime.Extensions/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.Handles/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.InteropServices/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -467,7 +602,7 @@
       },
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -480,7 +615,7 @@
       },
       "System.Threading.Tasks/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -500,6 +635,13 @@
       "path": "common.logging.core/3.4.1",
       "hashPath": "common.logging.core.3.4.1.nupkg.sha512"
     },
+    "FluentValidation/9.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C44l6Ih+YwpED/TsXfl6LIq6Z4wLXahstnr6T70uUg1Hs7/bLBKKAo9Nl0sLhVjDE8TA+fF+O3IM4nDrwabcSQ==",
+      "path": "fluentvalidation/9.3.0",
+      "hashPath": "fluentvalidation.9.3.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
       "serviceable": true,
@@ -507,12 +649,19 @@
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/1.0.1": {
+    "Microsoft.Extensions.Logging.Abstractions/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
-      "path": "microsoft.netcore.platforms/1.0.1",
-      "hashPath": "microsoft.netcore.platforms.1.0.1.nupkg.sha512"
+      "sha512": "sha512-wHT6oY50q36mAXBRKtFaB7u07WxKC5u2M8fi3PqHOOnHyUo9gD0u1TlCNR8UObHQxKMYwqlgI8TLcErpt29n8A==",
+      "path": "microsoft.extensions.logging.abstractions/1.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.0.1": {
       "type": "package",
@@ -520,6 +669,13 @@
       "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
       "path": "microsoft.netcore.targets/1.0.1",
       "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "NBitcoin/7.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qRN2ajVUlGo85q1XMCrnTH/48UkV64g6HDGPGekD7obuBxmSIvq7fb79b9oW2xt1o9LMBlpaGST1gDRKWbQ3Ow==",
+      "path": "nbitcoin/7.0.6",
+      "hashPath": "nbitcoin.7.0.6.nupkg.sha512"
     },
     "NBitcoin.Secp256k1/1.0.3": {
       "type": "package",
@@ -556,6 +712,13 @@
       "path": "nethereum.contracts/4.8.0",
       "hashPath": "nethereum.contracts.4.8.0.nupkg.sha512"
     },
+    "Nethereum.HdWallet/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gi5HhSYzCSq81dNcuzFQ7TX1gwMyiMsIhypa46ZWx32vzXCtYVlNoWVkiMPl/4Hf+0GzMLxiW2jlzc1Ab9FCwQ==",
+      "path": "nethereum.hdwallet/4.8.0",
+      "hashPath": "nethereum.hdwallet.4.8.0.nupkg.sha512"
+    },
     "Nethereum.Hex/4.8.0": {
       "type": "package",
       "serviceable": true,
@@ -583,6 +746,13 @@
       "sha512": "sha512-JCkg/TIBDwMNOqsiXsy2SVPAaEWfabMWogO3wqO1fEbBWzUgHjnHrLMBIzzmx7YRiFPZEiQlQpbGSa4btt3sWA==",
       "path": "nethereum.keystore/4.8.0",
       "hashPath": "nethereum.keystore.4.8.0.nupkg.sha512"
+    },
+    "Nethereum.Metamask/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zOAb7nYhvoeff8XrtpeLJONQMnKUorlI8Hl0xeExwH3Op+d0QuaT5K3927P2G4eZqjhW2JOuirAZWcNWLovk9g==",
+      "path": "nethereum.metamask/4.8.0",
+      "hashPath": "nethereum.metamask.4.8.0.nupkg.sha512"
     },
     "Nethereum.Model/4.8.0": {
       "type": "package",
@@ -619,6 +789,27 @@
       "path": "nethereum.signer.eip712/4.8.0",
       "hashPath": "nethereum.signer.eip712.4.8.0.nupkg.sha512"
     },
+    "Nethereum.Siwe/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JhRIO15uzkqh/6IJ+TGJAW7eKhzcwW1eJXhZq+N9isNFCF9ltv6uB2wP8IpqFl5cDAe446snJH8WNP7bCKG/3g==",
+      "path": "nethereum.siwe/4.8.0",
+      "hashPath": "nethereum.siwe.4.8.0.nupkg.sha512"
+    },
+    "Nethereum.Siwe.Core/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-APzyDfTB6VTkhdoESctHoe67f8aPXCSawrfajw+QoaqlG7exvAwypfQAjQD0GPjFs4VXsX89avQ3zSIuNFlO1Q==",
+      "path": "nethereum.siwe.core/4.8.0",
+      "hashPath": "nethereum.siwe.core.4.8.0.nupkg.sha512"
+    },
+    "Nethereum.UI/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cLvr73YALEfaAkUr0vwWMkfIZZTBzfE6ThBvTI4bXAl/6dBWcBlzXPPiGxCIpFt8+73LgYYOh2lVUoprR/y6EA==",
+      "path": "nethereum.ui/4.8.0",
+      "hashPath": "nethereum.ui.4.8.0.nupkg.sha512"
+    },
     "Nethereum.Util/4.8.0": {
       "type": "package",
       "serviceable": true,
@@ -632,6 +823,13 @@
       "sha512": "sha512-O4pxQBjOrYnamIyhCPd4y0vxqCHHeocu+71V9/8epSVAkADh4j1WoXzlxZ5vxb9EwkZlYA8mRgRw4SV19bIz/w==",
       "path": "nethereum.web3/4.8.0",
       "hashPath": "nethereum.web3.4.8.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
@@ -654,12 +852,26 @@
       "path": "system.collections/4.0.11",
       "hashPath": "system.collections.4.0.11.nupkg.sha512"
     },
+    "System.Collections.Concurrent/4.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2gBcbb3drMLgxlI0fBfxMA31ec6AEyYCHygGse4vxceJan8mRIWeKJ24BFzN7+bi/NFTgdIgufzb94LWO5EERQ==",
+      "path": "system.collections.concurrent/4.0.12",
+      "hashPath": "system.collections.concurrent.4.0.12.nupkg.sha512"
+    },
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-w5U95fVKHY4G8ASs/K5iK3J5LY+/dLFd4vKejsnI/ZhBsWS9hQakfx3Zr7lRWKg4tAw9r4iktyvsTagWkqYCiw==",
       "path": "system.diagnostics.debug/4.0.11",
       "hashPath": "system.diagnostics.debug.4.0.11.nupkg.sha512"
+    },
+    "System.Diagnostics.Tracing/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vDN1PoMZCkkdNjvZLql592oYJZgS7URcJzJ7bxeBgGtx5UtR5leNm49VmfHGqIffX4FKacHbI3H6UyNSHQknBg==",
+      "path": "system.diagnostics.tracing/4.1.0",
+      "hashPath": "system.diagnostics.tracing.4.1.0.nupkg.sha512"
     },
     "System.Dynamic.Runtime/4.0.11": {
       "type": "package",
